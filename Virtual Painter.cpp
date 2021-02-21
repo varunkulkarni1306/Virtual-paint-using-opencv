@@ -6,7 +6,7 @@
 using namespace cv;
 using namespace std;
 
-///////////////// Project 1 – Virtual Painter //////////////////////
+///////////////// Virtual Painter //////////////////////
 
 Mat img;
 VideoCapture cap(0);
@@ -86,7 +86,7 @@ void drawOnCanvas(vector<vector<int>> newPoints, vector<Scalar> myColorValues)
 }
 
 void main() {
-	VideoCapture cap(0);
+	VideoCapture cap(0); /////for opening external web cam use 1 instead of 0
 
 	while (true) {
 
